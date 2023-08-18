@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Sheet</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Header Section-->
+  <header>
+     <nav class="header">
+      <ul>
+        <li><a href="#html"><img class="image" src="css/images/for-html.png"">HTML</a></li>
+        <li><a href="#css"><img class="image" src="css/images/for-css.png" alt="">CSS</a></li>
+        <li><a href="#command-line"><img class="image" src="css/images/for-cl.png" alt="">Command Line</a></li>
+      </ul>
+    </nav>  
+  </header>
+
+  <!--HTML Section-->
+  <section id="html">
+   
+<h1>HTML Cheat-List</h1>
+<h2>Tables</h2>
+<h3>Table Tags</h3>
+<table class="name">
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> <span class="code">&lt;table&gt;</span></td>
+      <td>Table</td>
+      <td>The wrapper element for all HTML tables.</td>
+    </tr>
+    <tr>
+      <td><span class="code">&lt;thead&gt;</span></td>
+      <td>Table Head</td>
+      <td>The set of rows defining the column headers in a table.</td>
+    </tr>
+    <tr>
+      <td> <span class="code">&lt;tbody&gt;</span></td>
+      <td>Table Body</td>
+      <td>The set of rows containing actual table data.</td>
+    </tr>
+    <tr>
+      <td> <span class="code">&lt;tr&gt;</span></td>
+      <td>Table Row</td>
+      <td>The table row container</td>
+    </tr>
+    <tr>
+      <td> <span class="code">&lt;td&gt;</span></td>
+      <td>Table Data</td>
+      <td>The table row container</td>
+    </tr>
+    <tr>
+      <td> <span class="code">&lt;tfoot&gt;</span></td>
+      <td>Table Foot</td>
+      <td>The set of rows defining the footer in a table</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Table Attributes</h3>
+<table  class="name">
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="code">colspan</span></td>
+      <td>Column Span</td>
+      <td>Defines how many columns a td element should span</td>
+    </tr>
+    <tr>
+      <td> <span class="code">rowspan</span></td>
+      <td>Row Span</td>
+      <td>Defines how many rows a td element should span</td>
+    </tr>
+    </tbody>
+    </table> 
+
+  
+        <h2>Forms</h2>
+        <div class="form">
+        <pre>&lt;form&gt;
+
+  &lt;fieldset&gt;
+    &lt;legend&gt;Describes fieldset&lt;/legend&gt;
+
+    &lt;p&gt;
+      &lt;input type="radio" name="vertical" id="option1" value="top"&gt;
+      &lt;label for="option1"&gt;Top&lt;/label&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="option2"&gt;
+        &lt;input type="radio" name="vertical" id="option2" value="bottom"&gt; Bottom
+      &lt;/label&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="horizontal"&gt;
+        Horizontal:
+      &lt;/label&gt;
+      &lt;select id="horizontal" name="horizontal"&gt;
+        &lt;option value="left"&gt;Left&lt;/option&gt;
+        &lt;option value="middle"&gt;Middle&lt;/option&gt;
+        &lt;option value="right"&gt;Right&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/p&gt;
+
+  &lt;/fieldset&gt;
+
+&lt;/form&gt;</pre>
+    </div>
+
+      <h2>Semantic Markup</h2>
+
+      <div class="form">
+        <pre>&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Title&lt;title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;header&gt;
+    Logo, title, navigation
+    &lt;nav&gt;
+      Primary and secondary menus but ever nest navs
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;section&gt;
+    Related grouping of semantic meaning
+
+    &lt;article&gt;
+      Self-contained content
+    &lt;/article&gt;
+
+    &lt;article&gt;
+      Would still make sense if all other content removed
+
+      &lt;aside&gt;
+        &lt;blockquote&gt;
+          Related to main but outside the main flow
+        &lt;/blockquote&gt;
+      &lt;/aside&gt;
+
+    &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;footer&gt;
+    Copyright, contact, links
+  &lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+
+</div>
+</section>
+
+<!--CSS Section-->
+
+<section id="css">
+  <h1>CSS Cheat-List</h1>
+<div class="selector">
+<h2>Selectors</h2>
+<div class="content">
+  <div class="box">
+    <div class="name-box">
+      <p>
+        Type
+      </p>
+    </div>
+    <div class="info-box">
+      <p>
+        Just like its name suggests, the type selector matches the type of the element in the HTML document.
+        The element type is p, which comes from the HTML  <span class="code-css">&lt;p&gt;</span> element.
+         The type selector does not include the angle brackets.
+         Since element types are often referred to by their opening tag name, the type selector is sometimes referred to as the tag name or element selector.
+
+      </p>
+    </div>
+    <div class="info-sample">
+<pre> 
+p {
+  color: green;
+}</pre>   
+    </div>
+    </div>
+
+    <div class="box">
+      <div class="name-box">
+        <p>
+          Universal
+        </p>
+      </div>
+      <div class="info-box">
+        <p>The universal selector selects all elements of any type.
+          The universal selector uses the <span class="code-css">* </span>character in the same place where you specified the type selector in a ruleset, like so:
+        </p>
+  
+      </div>
+      <div class="info-sample">
+        <pre>
+ 
+* { 
+  font-family: Verdana;
+ }
+        </pre>
+      </div>
+      </div>
+      <div class="box">
+        <div class="name-box">
+          <p>
+            Class
+          </p>
+        </div>
+        <div class="info-box">
+          <p>Classes are HTML attributes used to select one or more elements for CSS styling or JavaScript purposes.The <i>class</i> attribute is commonly used for assigning styles to one or more elements.</p>
+
+        </div>
+        <div class="info-sample">
+          <pre>
+    
+   
+
+
+&lt;p class='brand'&gt;Sole Shoe Company&lt;/p&gt;
+
+
+.brand {
+ color: red;
+} How code looks like in the CSS
+             
+           </pre>
+        </div>
+        </div>
+        <div class="box">
+          <div class="name-box">
+            <p>
+              Multiple Classes
+            </p>
+          </div>
+          <div class="info-box">
+            <p>We can add multiple classes to an HTML element’s class attribute by separating them with a space.
+              This enables us to mix and match CSS classes to create many unique styles without writing a custom class for every style combination needed.</p>
+     
+          </div>
+          <div class="info-sample">
+            <pre>
+    
+    
+
+
+   
+.green {
+  color: green;
+}
+.bold {
+  font-weight: bold;
+}
+         
+&lt;h1 class='green bold'&gt;...&lt;/h1&gt;   
+
+            </pre>
+          </div>
+          </div>
+          <div class="box">
+            <div class="name-box">
+              <p>
+                ID
+              </p>
+            </div>
+            <div class="info-box">
+              <p>
+                <p>Oftentimes it’s important to select a single element with CSS to give it its own unique style. 
+                  If an HTML element needs to be styled uniquely, we can give it an ID using the id attribute.</p>
+          
+              </p>
+            </div>
+            <div class="info-sample">
+              <pre>
+ 
+  
+
+
+&lt;h1 id='large-title'&gt;..&lt;/h1&gt;
+ 
+css
+ 
+ #large-title {
+    font-size:30px;
+  }
+              </pre>
+            </div>
+            </div>
+            <div class="box">
+              <div class="name-box">
+                <p>
+                  Attribute
+                </p>
+              </div>
+              <div class="info-box">
+                <p>
+                  Attributes can be selected similarly to types, classes, and IDs.
+                </p>
+              </div>
+              <div class="info-sample">
+                <pre>
+      
+      
+      
+      
+                 
+                 
+                 
+             &lt;img src='/images/seasons/cold/winter.jpg'&gt;
+             &lt;img src='/images/seasons/warm/summer.jpg'&gt; - in HTML
+       In CSS
+          img[src*='winter'] {
+            height: 50px;
+          }
+       
+          img[src*='summer'] {
+           height: 100px;
+          }
+                </pre>
+              </div>
+              </div>
+              <div class="box">
+                <div class="name-box">
+                  <p>
+                    Pseudo-class
+                  </p>
+                </div>
+                <div class="info-box">
+                  <p>
+                    These are all examples of pseudo-class selectors in action! In fact, <span class="code-css">:focus,</span> <span class="code-css">:visited,</span> <span class="code-css">:disabled,</span> and <span class="code-css">:active</span>  are all pseudo-classes. Factors such as user interaction, site navigation, and position in the document tree can all give elements a different state with pseudo-class.
+        A pseudo-class can be attached to any selector. It is always written as a colon <span class="code-css">:</span> followed by a name.
+            
+                  </p>
+                </div>
+                <div class="info-sample">
+                  <pre>
+p:hover {
+ background-color: lime;
+}
+                  </pre>
+                </div>
+                </div>
+                <div class="box">
+                  <div class="name-box">
+                    <p>
+                      Specificity
+                    </p>
+                  </div>
+                  <div class="info-box">
+                    <p>
+                    Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity so that if an element needs a new style, it is easy to override.
+
+                    IDs are the most specific selector in CSS, followed by classes, and finally, type.
+              
+                    </p>
+                  </div>
+                  <div class="info-sample">
+                    <pre>
+
+
+
+                             
+                      
+                      
+                      
+                      
+      &lt;h1 class='headline'&gt;Breaking News&lt;/h1&gt;
+      
+      h1 {
+       color: red;
+      }    
+ 
+     .headline {
+      color: firebrick;
+     }
+ 
+ 
+                    </pre>
+                  </div>
+                  </div>
+                  <div class="box">
+                    <div class="name-box">
+                      <p>
+                        Chaining
+                      </p>
+                    </div>
+                    <div class="info-box">
+                      <p>
+                        When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
+                      </p>
+                    </div>
+                    <div class="info-sample">
+                      <pre>
+ h1.special {
+ }
+                      </pre>
+                    </div>
+                    </div>
+                    <div class="box">
+                      <div class="name-box">
+                        <p>
+                          Descendant Combinator
+                        </p>
+                      </div>
+                      <div class="info-box">
+                        <p>
+                          The descendant combinator — typically represented by a single space (" ") character — 
+                          combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. 
+                        </p>
+                      </div>
+                      <div class="info-sample">
+                        <pre>
+    
+  
+   &lt;ul class='main-list'&gt;
+      &lt;li&gt; ... &lt;/li&gt; 
+      &lt;li&gt; ... &lt;li&gt;
+      &lt;li&gt; ... &lt;/li&gt;
+   &lt;/ul&gt; 
+                        </pre>
+                      </div>
+                      </div>
+
+  </div>
+ 
+</div>
+
+<div class="properties">
+  <h2>Properties</h2>
+  <h3>Text Properties</h3>
+  <table class="tbl-property">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Values</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <span class="code">color</span></td>
+        <td>Sets the color of a text</td>
+        <td>RGB, hex, keyword</td>
+      </tr>
+      <tr>
+        <td><span class="code">line-height</span></td>
+        <td>Sets the distance berween lines</td>
+        <td>normal,<em>number,length,%</em> </td>
+      </tr>
+      <tr>
+        <td> <span class="code">line-spacing</span></td>
+        <td>Increase or decrease the space berween characters</td>
+        <td>normal, <em>length</em></td>
+      </tr>
+      <tr>
+        <td> <span class="code">text-align</span></td>
+        <td>Aligns in the text in an element</td>
+        <td>left, right,center, justify</td>
+      </tr>
+      <tr>
+        <td> <span class="code">text-decoration</span></td>
+        <td>Adds decoration to text</td>
+        <td>none, underline,overline, line-through</td>
+      </tr>
+      <tr>
+        <td> <span class="code">line-indent</span></td>
+        <td>Indents the first line of text in an element</td>
+        <td>lenghth, %</td>
+      </tr>
+      <tr>
+        <td> <span class="code">text-transform</span></td>
+        <td>Controls the letters in an element</td>
+        <td>none, capitalize, uppercase,lowercase</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Font Properties</h3>
+  <table class="tbl-property">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Values</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <span class="code">font</span></td>
+        <td>Sets all the font properties in one declaration</td>
+        <td><em>font-style, font-variant, font-weight, font-size/line-height, 
+          font-family,</em> caption, icon, menu, message-box, small-caption, status-bar, inherit</td>
+      </tr>
+      <tr>
+        <td><span class="code">font-family</span></td>
+        <td>Specifies the font-family for text</td>
+        <td><em>family-name, generic-family,</em>inherit </td>
+      </tr>
+      <tr>
+        <td> <span class="code">font-size</span></td>
+        <td>Specifies the font size of text</td>
+        <td>xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, <em>length, %,</em> inherit</td>
+      </tr>
+      <tr>
+        <td> <span class="code">font-style</span></td>
+        <td>Specifies the font style for text</td>
+        <td>normel, italic, oblique,inherit</td>
+      </tr>
+      <tr>
+        <td> <span class="code">font-weight</span></td>
+        <td>Specifies the weight of a font</td>
+        <td>normal, bold, bolder, lighter,
+          100, 200, 300, 400, 500, 600, 700, 800, 900, inherit
+          <strong>Careful, many of these are not supported!</strong> </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+</section>
+     
+
+<!--Command Line-->
+<section id="command-line">
+  <h1>Command Line Cheat-List</h1>
+  <h2>Working with Terminal</h2>
+  <table class="command-table">
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <span class="code">ls</span></td>
+        <td>List</td>
+        <td>The command line looks at the directory you are in,and then “lists” all the files and directories inside of it.</td>
+      </tr>
+      <tr>
+        <td><span class="code">pwd</span></td>
+        <td>Print working directory</td>
+        <td> It outputs the name of the directory you are currently in, called the working directory.</td>
+      </tr>
+      <tr>
+        <td> <span class="code">cd</span></td>
+        <td>Change directory</td>
+        <td>Just as you would click on a folder in Windows Explorer or Finder, cd switches you into the directory you specify. In other words, cd changes the working directory.</td>
+      </tr>
+      <tr>
+        <td> <span class="code">cd ..</span></td>
+        <td>Change directory back on one step</td>
+        <td>The argument .. stands for the directory above the current working directory. </td>
+      </tr>
+      <tr>
+        <td> <span class="code">cd / </span></td>
+        <td>Change directory into two steps</td>
+        <td>To move across multiple directories with a single command, we can provide cd a relative path. The relative path is a forward slash (/) separated list of all the directories leading to the goal directory. </td>
+      </tr>
+      <tr>
+        <td> <span class="code">mkdir</span></td>
+        <td>Make directoryt</td>
+        <td>It takes in a directory name as an argument and then creates a new directory in the current working directory.</td>
+      </tr>
+      <tr>
+        <td> <span class="code">touch</span></td>
+        <td>Touch</td>
+        <td>The touch command creates a new file inside the working directory.It takes in a filename as an argument and then creates an empty file with that name in the current working directory.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+</section>
+      
+</body>
+</html>
